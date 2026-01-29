@@ -1,0 +1,17 @@
+{
+  "students": [
+    {
+      "id": 223025,
+      "name": "Islam",
+      "age": 25
+    },
+    {
+      "id": 223026,
+      "name": "Mohamed",
+      "age": 26
+    }
+  ],
+  "instructors": [],
+  "Employees": [],
+  "Courses": []
+}
