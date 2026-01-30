@@ -22,7 +22,8 @@ export  function renderTable (students)  {
             if (!confirm(`Are you sure you want to delete ${student.name}?`))
                 return;
 
-            const btn = e.target.disabled = true;
+            const btn = e.target;
+            btn.disabled = true;
 
             try {
                 await removeStudent(student.id);
