@@ -1,9 +1,30 @@
 import {loadStudents,addStudent, checkDuplicateId} from "./controllers/studentController.js";
 import { showMessage } from "./UI/message.js";
-import { checkNameFormat } from "./utils/helpers.js";
+import { renderTable } from "./UI/tableRenderer.js";
+import { checkNameFormat,searchbyName } from "./utils/helpers.js";
 
 //^  On page load
-loadStudents();
+// loadStudents();
+
+let students = []
+
+async function initialize() {
+    students = await loadStudents();
+    renderTable(students);
+}
+
+//? Render initiallly
+initialize();
+
+//^ Adding Jquery handler to search for any value
+$('#searchInput').on('keyup', function() {
+    var value = $(this).val();
+    console.log('Value:', value);
+
+    var filteredData = searchbyName(value, students);
+    renderTable(filteredData);
+});
+
 
 //^ Add a student 
 document.querySelector("#studentForm").addEventListener("submit", async e => {
@@ -26,14 +47,15 @@ document.querySelector("#studentForm").addEventListener("submit", async e => {
         return;
     }
    
-
      //& Check for id duplication
     if (await checkDuplicateId(id)) {
         showMessage("sorry, Id is duplicated!");
         return;
     }
     //^ If all validation matches, so it will create the student
-    addStudent({id, name, age })
+    const newStudent = addStudent({ id, name, age })
+    students.push(newStudent)
+    renderTable(students)
 });
 
 
