@@ -9,7 +9,6 @@ import {
 import { showMessage } from "../UI/message.js";
 
 import Student from "../Actors/Student.js";
-import { renderTable } from "../UI/tableRenderer.js";
 
 export const loadStudents = async () => {
     try {
@@ -19,10 +18,11 @@ export const loadStudents = async () => {
         const students = studentObjects.map(
             s => new Student(s.id, String(s.name), Number(s.age))
         ).filter(s=>s!= null) //? Filtering data from null values
-
-        renderTable(students);
+        return students;
+        // renderTable(students);
     } catch (err) {
         showMessage(err.message, "error", 2000)
+        return []
     }
 };
 
@@ -37,8 +37,9 @@ export const addStudent = async (studentData) => {
 
         console.log("Student created:", newStudent);
 
+        return newStudent(newStudent.id, newStudent.name, newStudent.age);
         //?  Reloading the table
-        loadStudents();
+        // loadStudents();
     } catch (err) {
         showMessage(err.message, "error", 2000)
     }
@@ -60,8 +61,9 @@ export const removeStudent = async (id) => {
     try {
         await deleteStudent(id); 
         showMessage(`Student deleted successfully!`, "success",3000);        
+        return true;
         //? Reloading the table
-        loadStudents();
+        // loadStudents();
     } catch (err) {
         showMessage(err.message, "error",2000)
     }
@@ -76,6 +78,7 @@ export const loadStudentById = async (id) => {
 
     } catch (err) {
         showMessage(err, "error", 2000);
+        return null;
     }
 };
 
@@ -97,13 +100,14 @@ export const loadSortedStudents = async (sortColumn = null, sortOrder = "asc") =
             students = await getStudents(); 
         }
 
-        students = students.map(
+        return  students.map(
             s => new Student(s.id, String(s.name), Number(s.age))
         ).filter(s => s != null);
 
-        renderTable(students);
+        // renderTable(students);
     } catch (err) {
         showMessage(err.message, "error", 2000);
+        return [];
     }
 };
 
