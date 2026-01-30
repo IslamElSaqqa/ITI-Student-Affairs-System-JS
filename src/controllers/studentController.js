@@ -89,26 +89,10 @@ export async function checkDuplicateId (_id)  {
     return students.some((std) => std.id === _id)
 }
 
-export const loadSortedStudents = async (sortColumn = null, sortOrder = "asc") => {
-    try {
-        let students;
-        if (sortColumn) {
-            //^ Custom Sort endpoints
-            students = await sortStudents(sortColumn, sortOrder);
-        } else {
-            //^ Otherwise fallback to my initial load
-            students = await getStudents(); 
-        }
-
-        return  students.map(
-            s => new Student(s.id, String(s.name), Number(s.age))
-        ).filter(s => s != null);
-
-        // renderTable(students);
-    } catch (err) {
-        showMessage(err.message, "error", 2000);
-        return [];
-    }
+//^ Loading students sorted by {name || id ||age} and order {asc || desc}
+export const loadSortedStudents = async (column, order) => {
+    const data = await sortStudents(column, order);
+    return data.map(s => new Student(s.id, s.name, s.age));
 };
 
 

@@ -1,4 +1,5 @@
 import { request } from "./apiClient.js";
+import { sortEntities } from "../utils/helpers.js";
 /*
     & Student Services  =>  Endpoints     => Method (Options)
     & 1. GetStudents    =>  /students     => GET
@@ -37,7 +38,7 @@ export const deleteStudent = async (id) => {
 }
 
 //^ Custom sort student's column
-export const sortStudents = async (sortColumn = null, order = "asc") => { 
-    return request(`/students?_sort=${sortColumn}&_order=${order}`);
-}
+export const sortStudents = (column, order) => {
+    return sortEntities("students", column, order);
+};
 
