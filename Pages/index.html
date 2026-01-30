@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Students</title>
+    <link rel="stylesheet" href="../styles/student-style.css" />
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Student Management</h1>
+    <div id="errorMessage" class="error-message"></div>
+    
+    <!-- Add Student Form -->
+    <form id="studentForm">
+        <input type="number" name="id" placeholder="id" required min="1" />
+        <input type="text" name="name" placeholder="Name" required />
+        <input type="number" name="age" placeholder="Age" required min="1" />
+        <button type="submit">Add Student</button>
+    </form>
+
+    <div class="table-controls">
+        <div class="entries">
+            <select id="entriesSelect">
+                <option value="5">5</option>
+                <option value="10" selected>10</option>
+                <option value="25">25</option>
+            </select>
+            <span>entries per page</span>
+        </div>
+
+        <div class="search-box">
+            <label>Search:</label>
+            <input type="text" id="searchInput" placeholder="Search students..." />
+        </div>
+    </div>
+
+    <table id="studentTable">
+        <thead>
+            <tr>
+                <th data-column="id">ID</th>
+                <th data-column="name">Name</th>
+                <th data-column="age">Age</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rendered dynamically -->
+        </tbody>
+    </div>
+
+    </table>
+
+</div>
+
+<script type="module" src="../src/main.js"></script>
+</body>
+</html>

@@ -13,6 +13,8 @@ export const request = async (endpoint, options = {}) => {
     if (!response.ok)
         //? status = number
         throw new Error(`API Error: ${response.status}`)
+    if (response.status === 204) return null;
+
     return response.json(); //& Parsing and return immediately
 
 };

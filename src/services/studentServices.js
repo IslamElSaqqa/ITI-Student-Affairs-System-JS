@@ -2,10 +2,10 @@ import { request } from "./apiClient.js";
 /*
     & Student Services  =>  Endpoints     => Method (Options)
     & 1. GetStudents    =>  /students     => GET
-    & 2. getStudentById =>  /student/id   => GET
+    & 2. getStudentById =>  /students/id   => GET
     & 3. createStudent  =>  /students     => POST
-    & 4. updateStudent  =>  /student/id   => PUT / PATCH
-    & 5. deleteStudent  =>  /student/id   => DELETE
+    & 4. updateStudent  =>  /students/id   => PUT / PATCH
+    & 5. deleteStudent  =>  /students/id   => DELETE
 */
 
 export const getStudents = async ()=> { 
@@ -24,15 +24,20 @@ export const createStudent = async (student) => {
 }
 
 export const updateStudent = async (id, student) => { 
-    return request(`/student/${id}`, {
+    return request(`/students/${id}`, {
         method: 'PUT',
         body: JSON.stringify(student)
     });
 }
 
-export const deleteStudent = async (id, student) => { 
-    return request(`/student/${id}`, {
+export const deleteStudent = async (id) => { 
+    return request(`/students/${id}`, {
         method: 'DELETE',
-        body: JSON.stringify(student)
     });
 }
+
+//^ Custom sort student's column
+export const sortStudents = async (sortColumn = null, order = "asc") => { 
+    return request(`/students?_sort=${sortColumn}&_order=${order}`);
+}
+
