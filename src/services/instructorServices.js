@@ -2,10 +2,10 @@ import { request } from "./apiClient.js";
 /*
     & Student Services       =>  Endpoints       => Method (Options)
     & 1. getInstructors      =>  /instructors    => GET
-    & 2. getInstructorById   =>  /instructor/id  => GET
+    & 2. getInstructorById   =>  /instructors/id  => GET
     & 3. createInstructor    =>  /instructors    => POST
-    & 4. updateInstructor    =>  /instructor/id  => PUT / PATCH
-    & 5. deleteInstructor    =>  /instructor/id  => DELETE
+    & 4. updateInstructor    =>  /instructors/id  => PUT / PATCH
+    & 5. deleteInstructor    =>  /instructors/id  => DELETE
 */
 
 export const getInstructors = async ()=> { 
@@ -13,7 +13,7 @@ export const getInstructors = async ()=> {
 }
 
 export const getInstructorById = async (id) => { 
-    return request(`/instructor/${id}`); //? GET is the DEFAUlT
+    return request(`/instructors/${id}`); //? GET is the DEFAUlT
 }
 
 export const createInstructor = async (instructor) => {
@@ -24,7 +24,7 @@ export const createInstructor = async (instructor) => {
 }
 
 export const updateInstructor = async (id, instructor) => { 
-    return request(`/instructor/${id}`, {
+    return request(`/instructors/${id}`, {
         method: 'PUT',
         body: JSON.stringify(instructor)
     });
