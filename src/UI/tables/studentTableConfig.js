@@ -1,10 +1,12 @@
 import { editStudent, removeStudent } from "../../controllers/studentController.js";
+import { showMessage } from "../message.js";
 
 //^ Passing my custom configuration to student
 export const studentTableConfig = {
-    tableSelector: "#studentTable",
+    tableSelector: "#entityTable",
     actor: "students",
     columns: ["id", "name", "age"],
+    
 
     confirmDeleteMessage: (student) =>
         `Are you sure you want to delete ${student.name}?`,
