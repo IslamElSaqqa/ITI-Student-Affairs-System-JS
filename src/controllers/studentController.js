@@ -4,10 +4,11 @@ import {
     updateStudent, 
     deleteStudent, 
     getStudentById,
-    sortStudents
+    
 } from "../services/studentServices.js";
 import { showMessage } from "../UI/message.js";
 
+import { sortEntities } from "../utils/helpers.js";
 import Student from "../Actors/Student.js";
 
 export const loadStudents = async () => {
@@ -91,7 +92,8 @@ export async function checkDuplicateId (_id)  {
 
 //^ Loading students sorted by {name || id ||age} and order {asc || desc}
 export const loadSortedStudents = async (column, order) => {
-    const data = await sortStudents(column, order);
+    if (!column) return [];
+    const data = await sortEntities("students", column, order);
     return data.map(s => new Student(s.id, s.name, s.age));
 };
 
