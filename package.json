@@ -1,5 +1,23 @@
 {
-  "dependencies": {
-    "json-server": "^1.0.0-beta.5"
+  "name": "student-affairs-system",
+  "version": "1.0.0",
+  "description": "A comprehensive entity management system with CRUD operations, sorting, and pagination",
+  "main": "src/main.js",
+  "scripts": {
+    "server": "json-server --watch db.json --port 3000",
+    "dev": "http-server -p 8000 -o Pages/",
+    "start": "npm run server"
+  },
+  "keywords": [
+    "crud",
+    "json-server",
+    "vanilla-js",
+    "entity-management"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "json-server": "^0.17.4"
   }
 }
