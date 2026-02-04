@@ -2,22 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>Students</title>
-    <link rel="stylesheet" href="../styles/student-style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student-Affairs-System</title>
+    <link rel="stylesheet" href="../styles/app-style.css" />
 </head>
 <body>
 
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <img src="https://res.cloudinary.com/dr9yx1tod/image/upload/v1770162727/Students-Affaiirs-System_up7kax.png" alt="Student Affairs Logo" />
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="#" class="nav-link active" data-entity="students">Students</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" data-entity="instructors">Instructors</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" data-entity="employees">Employees</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
 <div class="container">
 
-    <h1>Student Management</h1>
+    <h1 id="pageTitle">Student System</h1>
     <div id="errorMessage" class="error-message"></div>
-    
-    <!-- Add Student Form -->
-    <form id="studentForm">
-        <input type="number" name="id" placeholder="id" required min="1" />
-        <input type="text" name="name" placeholder="Name" required />
-        <input type="number" name="age" placeholder="Age" required min="1" />
-        <button type="submit">Add Student</button>
+    <form id="entityForm">
+        <!-- Form fields will be dynamically rendered based on entity type -->
     </form>
 
     <div class="table-controls">
@@ -32,27 +48,31 @@
 
         <div class="search-box">
             <label>Search:</label>
-            <input type="text" id="searchInput" placeholder="Search students..." />
+            <input type="text" id="searchInput" placeholder="Search by name..." />
         </div>
     </div>
 
-    <table id="studentTable">
+    <table id="entityTable">
         <thead>
-            <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Age</th>
-                <th>Actions</th>
+            <tr id="tableHeader">
             </tr>
         </thead>
         <tbody>
-            <!-- Rendered dynamically -->
         </tbody>
-    </div>
-
     </table>
 
+    <!-- Pagination Controls -->
+    <div class="pagination-container">
+        <div class="pagination-info">
+            Showing <span id="pageInfo"></span>
+        </div>
+        <div class="pagination-buttons" id="paginationButtons">
+            <!-- Pagination buttons will be rendered dynamically -->
+        </div>
+    </div>
+
 </div>
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type="module" src="../src/main.js"></script>
 </body>
