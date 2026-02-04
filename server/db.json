@@ -1,67 +1,367 @@
 {
   "students": [
     {
-      "id": "28",
-      "name": "George Mikhail",
+      "id": 3,
+      "name": "Michael Brown",
+      "age": 21
+    },
+    {
+      "id": 4,
+      "name": "Olivia Taylor",
+      "age": 19
+    },
+    {
+      "id": 5,
+      "name": "William Anderson",
+      "age": 23
+    },
+    {
+      "id": 6,
+      "name": "Sophia Martinez",
+      "age": 20
+    },
+    {
+      "id": 7,
+      "name": "James Thomas",
+      "age": 21
+    },
+    {
+      "id": 8,
+      "name": "Isabella Jackson",
+      "age": 22
+    },
+    {
+      "id": 9,
+      "name": "Benjamin White",
+      "age": 19
+    },
+    {
+      "id": 10,
+      "name": "Mia Harris",
+      "age": 19
+    },
+    {
+      "id": 11,
+      "name": "Lucas Martin",
+      "age": 20
+    },
+    {
+      "id": 12,
+      "name": "Charlotte Thompson",
+      "age": 21
+    },
+    {
+      "id": 13,
+      "name": "Henry Garcia",
+      "age": 22
+    },
+    {
+      "id": 14,
+      "name": "Amelia Clark",
+      "age": 23
+    },
+    {
+      "id": 15,
+      "name": "Alexander Lewis",
+      "age": 19
+    },
+    {
+      "id": 16,
+      "name": "Evelyn Robinson",
+      "age": 20
+    },
+    {
+      "id": 17,
+      "name": "Daniel Walker",
+      "age": 21
+    },
+    {
+      "id": 18,
+      "name": "Abigail Hall",
+      "age": 22
+    },
+    {
+      "id": 19,
+      "name": "Matthew Young",
+      "age": 19
+    },
+    {
+      "id": 20,
+      "name": "Emily King",
+      "age": 19
+    },
+    {
+      "id": 21,
+      "name": "Joseph Wright",
+      "age": 20
+    },
+    {
+      "id": 22,
+      "name": "Elizabeth Lopez",
+      "age": 21
+    },
+    {
+      "id": 23,
+      "name": "David Hill",
+      "age": 22
+    },
+    {
+      "id": 24,
+      "name": "Sofia Scott",
+      "age": 23
+    },
+    {
+      "id": 25,
+      "name": "Andrew Green",
+      "age": 19
+    },
+    {
+      "id": 26,
+      "name": "Avery Adams",
+      "age": 20
+    },
+    {
+      "id": 27,
+      "name": "Christopher Baker",
+      "age": 21
+    },
+    {
+      "id": 28,
+      "name": "Ella Gonzalez",
+      "age": 22
+    },
+    {
+      "id": 29,
+      "name": "Joshua Nelson",
+      "age": 19
+    },
+    {
+      "id": 30,
+      "name": "Grace Carter",
+      "age": 19
+    },
+    {
+      "id": 31,
+      "name": "Ryan Mitchell",
+      "age": 20
+    },
+    {
+      "id": 32,
+      "name": "Chloe Perez",
+      "age": 21
+    },
+    {
+      "id": 33,
+      "name": "Nathan Roberts",
+      "age": 22
+    },
+    {
+      "id": 34,
+      "name": "Lily Turner",
+      "age": 23
+    },
+    {
+      "id": 35,
+      "name": "Samuel Phillips",
+      "age": 19
+    },
+    {
+      "id": 36,
+      "name": "Hannah Campbell",
+      "age": 20
+    },
+    {
+      "id": 37,
+      "name": "Christian Parker",
+      "age": 21
+    },
+    {
+      "id": 38,
+      "name": "Zoe Evans",
+      "age": 22
+    },
+    {
+      "id": 39,
+      "name": "Jonathan Edwards",
+      "age": 19
+    },
+    {
+      "id": 40,
+      "name": "Victoria Collins",
+      "age": 19
+    },
+    {
+      "id": 41,
+      "name": "Aaron Stewart",
+      "age": 20
+    },
+    {
+      "id": 42,
+      "name": "Penelope Sanchez",
+      "age": 21
+    },
+    {
+      "id": 43,
+      "name": "Kevin Morris",
+      "age": 22
+    },
+    {
+      "id": 44,
+      "name": "Natalie Rogers",
+      "age": 23
+    },
+    {
+      "id": 45,
+      "name": "Justin Reed",
+      "age": 19
+    },
+    {
+      "id": 46,
+      "name": "Brooklyn Cook",
+      "age": 20
+    },
+    {
+      "id": 47,
+      "name": "Brandon Morgan",
+      "age": 21
+    },
+    {
+      "id": 48,
+      "name": "Claire Bell",
+      "age": 22
+    },
+    {
+      "id": 49,
+      "name": "Tyler Murphy",
+      "age": 19
+    },
+    {
+      "id": 50,
+      "name": "Anna Bailey",
+      "age": 19
+    },
+    {
+      "id": 2002,
+      "name": "Islam Ashraf",
+      "age": 25
+    }
+  ],
+  "instructors": [
+    {
+      "id": 1,
+      "name": "Dr Robert Anderson",
+      "department": "Computer Science",
+      "salary": 75100
+    },
+    {
+      "id": 2,
+      "name": "Dr Sarah Martinez",
+      "department": "Mathematics",
+      "salary": 72000,
       "age": 34
     },
     {
-      "id": "27",
-      "name": "Fady Nasser",
-      "age": 31
+      "id": 3,
+      "name": "Dr James Taylor",
+      "department": "Physics",
+      "salary": 78000,
+      "age": 38
     },
     {
-      "id": "26",
-      "name": "Peter George",
-      "age": 29
+      "id": 4,
+      "name": "Dr Emily Johnson",
+      "department": "Biology",
+      "salary": 73000,
+      "age": 33
     },
     {
-      "id": "25",
-      "name": "Islam Ashraf",
-      "age": 26
+      "id": 5,
+      "name": "Dr David Brown",
+      "department": "Chemistry",
+      "salary": 76000,
+      "age": 36
     },
     {
-      "id": "24",
-      "name": "Mina Nabil",
-      "age": 28
-    },
-    {
-      "id": "23",
-      "name": "Ramy Ashour",
-      "age": 26
-    },
-    {
-      "id": "22",
-      "name": "Hany Abdelrahman",
+      "id": 6,
+      "name": "Dr Laura Wilson",
+      "department": "Statistics",
+      "salary": 70000,
       "age": 32
     },
     {
-      "id": "21",
-      "name": "Ayman Fouad",
-      "age": 27
+      "id": 7,
+      "name": "Dr Mark Thomas",
+      "department": "Engineering",
+      "salary": 82000,
+      "age": 40
     },
     {
-      "id": "20",
-      "name": "Wael Farouk",
+      "id": 8,
+      "name": "Dr Linda Jackson",
+      "department": "Economics",
+      "salary": 74000,
+      "age": 37
+    },
+    {
+      "id": 9,
+      "name": "Dr Steven White",
+      "department": "Philosophy",
+      "salary": 69000,
+      "age": 45
+    },
+    {
+      "id": 10,
+      "name": "Dr Angela Harris",
+      "department": "Psychology",
+      "salary": 71000,
       "age": 34
-    },
-    {
-      "id": "19",
-      "name": "Sherif Magdy",
-      "age": 29
-    },
-    {
-      "id": "18",
-      "name": "Nader Hany",
-      "age": 30
-    },
-    {
-      "id": "17",
-      "name": "Eslam Refaat",
-      "age": 24
     }
   ],
-  "instructors": [],
-  "Employees": [],
-  "Courses": []
+  "employees": [
+    {
+      "id": 1,
+      "name": "Alice Thompson",
+      "position": "Software Engineer",
+      "office": "Building A",
+      "age": 28,
+      "startDate": "2020-03-15",
+      "salary": 85000
+    },
+    {
+      "id": 2,
+      "name": "Bob Williams",
+      "position": "Project Manager",
+      "office": "Building B",
+      "age": 35,
+      "startDate": "2018-07-22",
+      "salary": 95000
+    },
+    {
+      "id": 3,
+      "name": "Carol Garcia",
+      "position": "UX Designer",
+      "office": "Building A",
+      "age": 30,
+      "startDate": "2019-11-10",
+      "salary": 78000
+    },
+    {
+      "id": 4,
+      "name": "David Martinez",
+      "position": "Data Analyst",
+      "office": "Building C",
+      "age": 26,
+      "startDate": "2021-02-18",
+      "salary": 70000
+    },
+    {
+      "id": 5,
+      "name": "Ethan Rodriguez",
+      "position": "Backend Developer",
+      "office": "Building A",
+      "age": 29,
+      "startDate": "2020-09-01",
+      "salary": 82000
+    }
+  ]
 }
