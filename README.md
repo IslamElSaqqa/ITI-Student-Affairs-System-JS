@@ -154,9 +154,6 @@ http://localhost:3000
 ### Courses Module
 ![Courses Module](screenshots/course-management.png)
 
-
-
-
 ## How to Run the Project
 
 ```bash
