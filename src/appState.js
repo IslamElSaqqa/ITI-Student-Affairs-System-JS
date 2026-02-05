@@ -7,11 +7,13 @@ import { showMessage } from "./UI/message.js";
 import * as studentController from "./controllers/studentController.js";
 import * as instructorController from "./controllers/instructorController.js";
 import * as employeeController from "./controllers/employeeController.js";
+import * as courseController from "./controllers/courseController.js"
 
 // Import table configs
 import { studentTableConfig } from "./UI/tables/studentTableConfig.js";
 import { instructorTableConfig } from "./UI/tables/instructorTableConfig.js";
 import { employeeTableConfig } from "./UI/tables/employeeTableConfig.js";
+import { courseTableConfig } from "./UI/tables/courseTableConfig.js";
 
 // Import helpers
 import { checkNameFormat, searchbyName } from "./utils/helpers.js";
@@ -42,7 +44,14 @@ export class AppState {
                 tableConfig: employeeTableConfig,
                 title: 'Employee Management',
                 validateAdd: this.validateEmployee.bind(this)
+            },
+            courses: {
+                controller: courseController,
+                tableConfig: courseTableConfig,
+                title: 'Course Management',
+                validateAdd: this.validateCourse.bind(this)
             }
+            
         };
     }
 
@@ -162,6 +171,18 @@ export class AppState {
         }
         return { valid: true };
     }
+
+    validateCourse(data) {
+        
+    if (!data.id || !data.name?.trim() || Number.isNaN(data.code) ||!data.description?.trim()) {
+        return {
+            valid: false,
+            message: "Invalid input. Please fill all course fields correctly."
+        };
+    }
+        return { valid: true };
+    }
+
 }
 
 function capitalize(str) {
