@@ -30,6 +30,7 @@ document.querySelectorAll('.nav-link').forEach(link => {
     });
 });
 
+
 // Search functionality
 document.querySelector("#searchInput").addEventListener("keyup", (e) => {
     app.search(e.target.value);
