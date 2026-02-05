@@ -141,17 +141,19 @@ http://localhost:3000
 ---
 ## Screenshots
 
+
 ### Students Module
-![Students Module](Screenshots/student-management.png)
+![Students Module](screenshots/student-management.png)
 
 ### Add Student Form
 ![Add Student](screenshots/student-form.png)
 
 ### Instructors Module
-![Instructors Module](screenshots/Instructor-management.png)
+![Instructors Module](screenshots/instructor-management.png)
 
 ### Courses Module
-![Courses Module](screenshots/Course-management.png)
+![Courses Module](screenshots/course-management.png)
+
 
 
 
