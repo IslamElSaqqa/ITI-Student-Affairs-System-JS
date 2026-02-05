@@ -140,10 +140,11 @@ http://localhost:3000
 
 ---
 ## Screenshots
-![student](screenshots/student-management.png)
+![student](screenshots/Student-management.png)
 ![add student](screenshots/student-form.png)
-![instructor](screenshots/instructor-management.png)
-![course](screenshots/course-management.png)
+![instructor](screenshots/Instructor-management.png)
+![course](screenshots/Course-management.png)
+
 
 ## How to Run the Project
 
