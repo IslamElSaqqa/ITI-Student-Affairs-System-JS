@@ -140,10 +140,10 @@ http://localhost:3000
 
 ---
 ## Screenshots
-![student Module](screenshots/student-management.png)
+![student](screenshots/student-management.png)
 ![add student](screenshots/student-form.png)
-![instructor Module](screenshots/instructor-management.png)
-![course Module](screenshots/course-management.png)
+![instructor](screenshots/instructor-management.png)
+![course](screenshots/course-management.png)
 
 ## How to Run the Project
 
