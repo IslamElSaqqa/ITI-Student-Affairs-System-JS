@@ -18,6 +18,13 @@ export const formConfigs = {
         { name: 'age', type: 'number', placeholder: 'Age', required: true, min: 18 },
         { name: 'startDate', type: 'date', placeholder: 'Start Date', required: true },
         { name: 'salary', type: 'number', placeholder: 'Salary', required: true, min: 1 }
+    ],
+
+    courses: [
+        { name: 'id', type: 'number', placeholder: 'ID', required: true, min: 1 },
+        { name: 'name', type: 'text', placeholder: 'Course Name', required: true },
+        { name: 'code', type: 'number', placeholder: 'Course Code', required: true },
+        { name: 'description', type: 'text', placeholder: 'Course Description', required: true }
     ]
 };
 
