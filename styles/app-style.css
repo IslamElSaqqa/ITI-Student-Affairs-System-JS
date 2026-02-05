@@ -96,7 +96,7 @@ body {
 h1 {
     text-align: center;
     margin-bottom: 20px;
-    color: #333;
+    color: #e62e00;
 }
 
 /* Error/Success Messages */
@@ -220,6 +220,7 @@ table {
     background: white;
     color: black;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
 thead {
