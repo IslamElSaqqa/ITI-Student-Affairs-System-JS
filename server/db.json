@@ -363,5 +363,163 @@
       "startDate": "2020-09-01",
       "salary": 82000
     }
+  ],
+  "courses": [
+    {
+      "id": 1,
+      "name": "Introduction to Programming",
+      "code": 301,
+      "description": "Programming basics and problem solving."
+    },
+    {
+      "id": 2,
+      "name": "OOP Concepts",
+      "code": 302,
+      "description": "Classes, objects, and inheritance."
+    },
+    {
+      "id": 3,
+      "name": "Data Structures",
+      "code": 303,
+      "description": "Arrays, stacks, and queues."
+    },
+    {
+      "id": 4,
+      "name": "Algorithms",
+      "code": 304,
+      "description": "Algorithm design and analysis."
+    },
+    {
+      "id": 5,
+      "name": "Database Systems",
+      "code": 401,
+      "description": "Databases and SQL fundamentals."
+    },
+    {
+      "id": 6,
+      "name": "Web Development",
+      "code": 402,
+      "description": "Building modern web applications."
+    },
+    {
+      "id": 7,
+      "name": "Software Engineering",
+      "code": 403,
+      "description": "Software design and best practices."
+    },
+    {
+      "id": 8,
+      "name": "Operating Systems",
+      "code": 404,
+      "description": "Processes and memory management."
+    },
+    {
+      "id": 9,
+      "name": "Computer Networks",
+      "code": 405,
+      "description": "Networking concepts and protocols."
+    },
+    {
+      "id": 10,
+      "name": "Computer Architecture",
+      "code": 406,
+      "description": "CPU design and system architecture."
+    },
+    {
+      "id": 11,
+      "name": "Artificial Intelligence",
+      "code": 501,
+      "description": "Foundations of artificial intelligence."
+    },
+    {
+      "id": 12,
+      "name": "Machine Learning",
+      "code": 502,
+      "description": "Learning models and data prediction."
+    },
+    {
+      "id": 13,
+      "name": "Deep Learning",
+      "code": 503,
+      "description": "Neural networks and deep models."
+    },
+    {
+      "id": 14,
+      "name": "Data Mining",
+      "code": 504,
+      "description": "Extracting patterns from data."
+    },
+    {
+      "id": 15,
+      "name": "Big Data Analytics",
+      "code": 505,
+      "description": "Large-scale data processing."
+    },
+    {
+      "id": 16,
+      "name": "Cloud Computing",
+      "code": 506,
+      "description": "Cloud services and deployment."
+    },
+    {
+      "id": 17,
+      "name": "Cyber Security",
+      "code": 507,
+      "description": "Security principles and threats."
+    },
+    {
+      "id": 18,
+      "name": "Mobile App Development",
+      "code": 508,
+      "description": "Developing mobile applications."
+    },
+    {
+      "id": 19,
+      "name": "DevOps Fundamentals",
+      "code": 509,
+      "description": "CI/CD and automation basics."
+    },
+    {
+      "id": 20,
+      "name": "Distributed Systems",
+      "code": 510,
+      "description": "Scalable distributed applications."
+    },
+    {
+      "id": 21,
+      "name": "Game Development",
+      "code": 511,
+      "description": "Game design and development."
+    },
+    {
+      "id": 22,
+      "name": "Human Computer Interaction",
+      "code": 512,
+      "description": "Designing user-friendly systems."
+    },
+    {
+      "id": 23,
+      "name": "Software Testing",
+      "code": 513,
+      "description": "Testing strategies and quality assurance."
+    },
+    {
+      "id": 24,
+      "name": "Compiler Design",
+      "code": 514,
+      "description": "Language parsing and compilation."
+    },
+    {
+      "id": 25,
+      "name": "Blockchain Fundamentals",
+      "code": 515,
+      "description": "Blockchain concepts and applications."
+    },
+    {
+      "id": 26,
+      "name": "C# Programming",
+      "code": 516,
+      "description": "CSharp Basics and Win Forms"
+    }
   ]
 }
