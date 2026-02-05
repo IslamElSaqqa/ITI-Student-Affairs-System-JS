@@ -140,19 +140,10 @@ http://localhost:3000
 
 ---
 ## Screenshots
-
-
-### Students Module
-![Students Module](screenshots/student-management.png)
-
-### Add Student Form
-![Add Student](screenshots/student-form.png)
-
-### Instructors Module
-![Instructors Module](screenshots/instructor-management.png)
-
-### Courses Module
-![Courses Module](screenshots/course-management.png)
+![student Module](screenshots/student-management.png)
+![add student](screenshots/student-form.png)
+![instructor Module](screenshots/instructor-management.png)
+![course Module](screenshots/course-management.png)
 
 ## How to Run the Project
 
